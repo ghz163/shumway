@@ -224,7 +224,7 @@ function convertRecordsToStyledPaths(records, fillPaths, linePaths, dictionary,
       assert(record.type === 1);
       if (!segment) {
         if (!defaultPath) {
-          var style = {color:{red:0, green: 0, blue: 0, alpha: 255}, width: 20};
+          var style = {color:{red:0, green: 0, blue: 0, alpha: 0}, width: 20};
           defaultPath = new SegmentedPath(null, processStyle(style, true));
         }
         segment = defaultPath.addSegment([], [], isMorph ? [] : null);
